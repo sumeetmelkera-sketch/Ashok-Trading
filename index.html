@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ashok Trading is a wholesale supplier in Mumbai offering quality tissue and disposable products from Rossari Professional, Kressa and other brands.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://ashok-trading.pages.dev/">
+<meta property="og:title" content="Ashok Trading | Wholesale Supplier of Tissue & Disposable Products">
+<meta property="og:description" content="Wholesale supplier of quality tissue and disposable products in Mumbai. Explore Rossari Professional, Kressa and other products.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ashok-trading.pages.dev/">
+<link rel="icon" type="image/png" href="favicon.png">
+<title>Ashok Trading | Wholesale Supplier of Tissue & Disposable Products</title>
+<style>
+:root{
+  --forest:#183d2a; --forest-2:#244b36; --olive:#4a5530; --ink:#171916;
+  --muted:#696c66; --bg:#e7e6df; --paper:#f5f5ef; --white:#fff; --line:#c9cbc2;
+  --shadow:0 16px 45px rgba(20,31,24,.10);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+a{text-decoration:none;color:inherit} button{font:inherit}
+.header{position:fixed;top:0;left:0;right:0;z-index:1000;height:88px;background:rgba(231,230,223,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(24,61,42,.14);display:flex;align-items:center;justify-content:space-between;padding:0 clamp(18px,4vw,58px)}
+.brand{display:flex;align-items:center;gap:12px}.brand img{width:64px;height:64px;object-fit:contain;border-radius:50%;border:2px solid var(--forest);background:var(--bg)}
+.brand-name{font-family:Georgia,serif;font-size:1.42rem;letter-spacing:.12em;font-weight:700;color:var(--forest)}
+.menu-btn{width:48px;height:48px;border:1px solid var(--forest);border-radius:12px;background:transparent;display:grid;place-items:center;cursor:pointer}
+.menu-lines,.menu-lines:before,.menu-lines:after{content:"";display:block;width:21px;height:2px;background:var(--forest);position:relative;transition:.25s}.menu-lines:before{position:absolute;top:-7px}.menu-lines:after{position:absolute;top:7px}
+.drawer{position:fixed;inset:0 0 0 auto;width:min(390px,88vw);background:var(--forest);color:white;z-index:1200;transform:translateX(100%);transition:transform .3s ease;padding:30px}.drawer.open{transform:translateX(0)}
+.drawer-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:45px}.drawer-title{font-family:Georgia,serif;letter-spacing:.12em;font-size:1.05rem}.close{border:1px solid rgba(255,255,255,.4);background:transparent;color:white;width:42px;height:42px;border-radius:10px;cursor:pointer;font-size:1.3rem}
+.drawer nav{display:grid;gap:8px}.drawer nav a{padding:15px 8px;border-bottom:1px solid rgba(255,255,255,.14);font-size:1.05rem}.drawer nav a:hover{background:rgba(255,255,255,.06)}
+.overlay{position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:1100;opacity:0;pointer-events:none;transition:.3s}.overlay.show{opacity:1;pointer-events:auto}
+main{padding-top:88px} section{padding:92px clamp(20px,5vw,80px)}
+.hero{min-height:78vh;display:grid;place-items:center;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;width:600px;height:600px;border-radius:50%;background:rgba(24,61,42,.08);right:-260px;top:-220px}
+.hero-inner{width:min(1120px,100%);display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}.eyebrow{color:var(--olive);font-weight:800;letter-spacing:.18em;font-size:.78rem;text-transform:uppercase;margin-bottom:15px}.wholesale-badge{display:inline-block;margin:0 0 18px;padding:8px 14px;border:1px solid var(--forest);border-radius:999px;color:var(--forest);font-size:.78rem;font-weight:900;letter-spacing:.12em;text-transform:uppercase;background:rgba(255,255,255,.35)}
+h1{font-family:Georgia,serif;font-size:clamp(4rem,8vw,7.4rem);line-height:.95;color:var(--forest);letter-spacing:-.04em}.hero-copy p{max-width:620px;color:var(--muted);font-size:1.08rem;margin:24px 0 30px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:10px;border:1px solid var(--forest);font-weight:700;cursor:pointer;transition:.2s}.btn.primary{background:var(--forest);color:white}.btn.secondary{background:transparent;color:var(--forest)}.btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(24,61,42,.12)}
+.hero-logo{display:grid;place-items:center}.hero-logo img{width:min(480px,88vw);height:auto;aspect-ratio:1;object-fit:contain;border-radius:50%;box-shadow:var(--shadow);background:var(--bg)}
+.section-head{width:min(1120px,100%);margin:0 auto 38px}.section-head h2{font-family:Georgia,serif;color:var(--forest);font-size:clamp(2rem,4vw,3.2rem);margin-bottom:8px}.section-head p{color:var(--muted);max-width:650px}
+.product-area{width:min(1120px,100%);margin:auto}.product-controls{display:flex;flex-wrap:wrap;align-items:stretch;gap:0;margin:0 auto 42px;max-width:980px;border-bottom:1px solid var(--line)}
+.filter{order:2;flex:1 1 calc(50% - 8px);border:0;background:transparent;padding:13px 12px 12px;color:var(--muted);font-weight:900;font-size:1rem;letter-spacing:.025em;cursor:pointer;transition:flex-basis .28s ease,color .28s ease,font-size .28s ease,border-color .28s ease,transform .28s ease;min-width:0;text-align:center}
+.filter.active{order:1;flex:1 1 100%;color:var(--forest);font-size:1.55rem;padding-top:17px;padding-bottom:15px;border-bottom:5px solid var(--forest);transform:translateY(-1px)}.filter:hover{color:var(--forest)}
+.product-group{margin-bottom:55px}.group-title{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:22px}.group-title h3{font-family:Georgia,serif;color:var(--forest);font-size:1.95rem}.group-title a{color:var(--olive);font-weight:800;font-size:.9rem;white-space:nowrap}
+.subcategory-tabs{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:0 0 28px}.subcat-tab{border:1px solid var(--line);background:transparent;color:var(--muted);padding:13px 14px;border-radius:11px;font-weight:900;font-size:1rem;cursor:pointer;transition:.22s}.subcat-tab.active{background:var(--forest);border-color:var(--forest);color:#fff}.subcat-panel{display:none}.subcat-panel.active{display:block}
+.product-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:18px}.product-card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:16px;display:flex;flex-direction:column;min-height:360px}.product-image-slot{height:160px;border-radius:12px;background:rgba(24,61,42,.035);border:1px dashed rgba(24,61,42,.20);margin-bottom:16px;display:grid;place-items:center;overflow:hidden}.product-image-slot span{font-size:.72rem;text-transform:uppercase;letter-spacing:.14em;color:rgba(74,85,48,.62);font-weight:800}.product-card h4{font-size:1.08rem;color:var(--ink);margin-bottom:7px}.product-card p{font-size:.88rem;color:var(--muted);margin-bottom:18px}.order{margin-top:auto;width:100%;padding:10px;border-radius:9px;border:1px solid var(--forest);background:transparent;color:var(--forest);font-weight:800;cursor:pointer}.order:hover{background:var(--forest);color:white}
+.note{font-size:.83rem;color:var(--muted);margin-top:14px}
+.about{background:var(--forest);color:white}.about .section-head h2,.about .section-head p{color:white}.about-grid{width:min(1120px,100%);margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:20px}.about-box{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:26px}.about-box h3{font-family:Georgia,serif;margin-bottom:8px;font-size:1.4rem}.about-box p{color:rgba(255,255,255,.78)}
+.proprietor{margin-top:22px;font-size:1rem;color:rgba(255,255,255,.86)}.proprietor strong{color:white}
+.dealership{width:min(1120px,100%);margin:58px auto 0;padding:34px 26px;background:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.16);border-radius:20px}.dealership-title{text-align:center;font-family:Georgia,serif;font-size:clamp(1.55rem,3vw,2.2rem);font-weight:800;letter-spacing:.06em;margin-bottom:30px;color:white}.dealership-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}.dealership-card{background:rgba(255,255,255,.97);color:var(--ink);border-radius:16px;padding:20px;display:flex;flex-direction:column;align-items:center;text-align:center}.dealership-card img{width:min(100%,380px);height:150px;object-fit:contain;background:var(--bg);border-radius:10px;margin-bottom:17px}.dealership-card h4{color:var(--forest);font-family:Georgia,serif;font-size:1.35rem;margin-bottom:4px}.dealership-card p{font-size:.85rem;color:var(--muted);margin-bottom:9px}.dealership-card a{font-size:.82rem;font-weight:900;color:var(--olive);border-bottom:1px solid var(--olive);padding-bottom:2px}
+.why{background:var(--paper)}.why-grid{width:min(1120px,100%);margin:auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.why-card{background:var(--bg);border:1px solid var(--line);border-radius:18px;padding:24px}.why-card h3{font-family:Georgia,serif;color:var(--forest);font-size:1.35rem;margin-bottom:7px}.why-card p{color:var(--muted)}
+.contact-grid{width:min(1120px,100%);margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:20px}.contact-card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:28px}.contact-card h3{font-family:Georgia,serif;color:var(--forest);font-size:1.45rem;margin-bottom:14px}.contact-item{padding:12px 0;border-bottom:1px solid var(--line)}.contact-item:last-child{border-bottom:0}.contact-label{font-size:.75rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}.contact-value{font-weight:700;margin-top:2px}.contact-value a{color:var(--forest);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}.address{line-height:1.65}.map-btn{margin-top:18px}
+footer{background:#111c15;color:rgba(255,255,255,.72);padding:35px 20px;text-align:center}footer strong{color:white;font-family:Georgia,serif;font-size:1.2rem;letter-spacing:.1em}footer p{margin-top:8px;font-size:.86rem}
+.whatsapp{position:fixed;right:20px;bottom:20px;z-index:1050;width:58px;height:58px;border-radius:50%;background:#1f9d55;color:white;display:grid;place-items:center;box-shadow:0 12px 30px rgba(0,0,0,.22);font-weight:900;font-size:1.35rem;border:3px solid rgba(255,255,255,.8);transition:.2s}.whatsapp:hover{transform:scale(1.06)}
+button,a{-webkit-tap-highlight-color:transparent}button:focus,a:focus{outline:none!important;box-shadow:none!important}button:focus-visible,a:focus-visible{outline:none!important;box-shadow:none!important}
+@media(max-width:850px){.hero-inner{grid-template-columns:1fr;text-align:center}.hero-copy p{margin-left:auto;margin-right:auto}.actions{justify-content:center}.hero-logo{order:-1}.about-grid,.contact-grid,.why-grid{grid-template-columns:1fr}}
+@media(max-width:560px){
+.filter{font-size:.92rem;padding-left:8px;padding-right:8px}.filter.active{font-size:1.3rem}.subcategory-tabs{gap:8px}.subcat-tab{padding:11px 8px;font-size:.92rem}
+.header{height:68px}.brand img{width:50px;height:50px}.brand-name{font-size:1.08rem}main{padding-top:68px}.hero{min-height:auto;padding-top:70px;padding-bottom:70px}section{padding:70px 18px}.drawer{padding:22px}.whatsapp{right:16px;bottom:16px}.product-controls{overflow-x:auto}.filter{white-space:nowrap;padding-left:12px;padding-right:12px;font-size:.92rem}.filter.active{font-size:1.08rem}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.product-card{min-height:320px;padding:11px}.product-image-slot{height:115px}.product-card h4{font-size:.92rem}.product-card p{font-size:.78rem}.order{font-size:.8rem;padding:9px 5px}.dealership{padding:25px 15px}.dealership-grid{grid-template-columns:1fr}.dealership-card img{height:130px}.group-title{align-items:start;flex-direction:column;gap:6px}}
+
+/* Final refinements: subtle rounded corners, not excessive. */
+.card, .product-card, .company-tab, .subcategory-tab, .contact-card,
+.dealership-card, .why-card, .btn, .maps-btn, .menu-panel, .menu-link {
+  border-radius: 10px;
+}
+.hamburger, .menu-toggle {
+  border-radius: 8px !important;
+}
+.hero-inner {
+  width: min(900px, 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+  text-align: center;
+}
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero-logo img {
+  width: min(420px, 76vw);
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: contain;
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+  background: var(--bg);
+}
+.hero-copy h1 { margin: 0 0 12px; }
+.hero-copy .eyebrow { margin: 0 0 12px; }
+.hero-copy .wholesale-badge { margin: 0 0 8px; }
+.hero-copy p { max-width: 700px; margin: 18px 0 30px; }
+@media (max-width: 850px) {
+  .hero-logo img { width: min(330px, 72vw); }
+}
+
+</style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"LocalBusiness",
+  "name":"Ashok Trading",
+  "url":"https://ashok-trading.pages.dev/",
+  "logo":"https://ashok-trading.pages.dev/ashok-trading-logo.jpg",
+  "description":"Wholesale supplier of tissue and disposable products in Mumbai.",
+  "telephone":"+91-9967258331",
+  "email":"ashoktrading65@gmail.com",
+  "address":{
+    "@type":"PostalAddress",
+    "streetAddress":"Shop no. 2, Opp. Unique BLDG, Ramesh Nagar, Last Bus Stop, near Geetanjali Bus Stop, Amboli, Andheri West",
+    "addressLocality":"Mumbai",
+    "postalCode":"400058",
+    "addressCountry":"IN"
+  },
+  "areaServed":"Mumbai"
+}
+</script>
+</head>
+<body>
+<header class="header">
+  <a class="brand" href="#home" aria-label="Ashok Trading home"><img src="ashok-trading-logo.jpg" alt="Ashok Trading logo"><span class="brand-name">ASHOK TRADING</span></a>
+  <button class="menu-btn" id="menuBtn" aria-label="Open navigation"><span class="menu-lines"></span></button>
+</header>
+<div class="overlay" id="overlay"></div>
+<aside class="drawer" id="drawer" aria-label="Navigation">
+  <div class="drawer-top"><div class="drawer-title">ASHOK TRADING</div><button class="close" id="closeBtn" aria-label="Close navigation">×</button></div>
+  <nav><a href="#home">Home</a><a href="#products">Products</a><a href="#about">About Us</a><a href="#contact">Contact</a></nav>
+</aside>
+<main>
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="hero-logo"><img src="ashok-trading-logo.jpg" alt="Ashok Trading"></div>
+    <div class="hero-copy">
+      <h1>ASHOK TRADING</h1>
+      <div class="eyebrow">ALL TISSUE AND DISPOSABLE PRODUCTS</div>
+      <div class="wholesale-badge">Wholesale Supplier</div>
+      <p>A clean, dependable range of tissue and disposable products for wholesale, professional and business needs in Mumbai.</p>
+      <div class="actions">
+        <a class="btn primary" href="#products">View Products</a>
+        <a class="btn secondary" id="heroOrder" href="#">Order Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="products">
+  <div class="section-head"><div class="eyebrow">Our Products</div><h2>Products</h2><p>Choose a company to bring it forward, then browse only its Tissues and Rolls.</p></div>
+  <div class="product-area">
+    <div class="product-controls">
+      <button class="filter active" data-filter="rossari">ROSSARI PROFESSIONAL</button>
+      <button class="filter" data-filter="kressa">K R E S S A</button>
+      <button class="filter" data-filter="others">OTHERS</button>
+    </div>
+
+    <div class="product-group" data-company="rossari">
+      <div class="group-title"><h3>ROSSARI PROFESSIONAL</h3><a href="https://rossariprofessional.com/" target="_blank" rel="noopener">Company website ↗</a></div>
+      <div class="subcategory-tabs" role="tablist" aria-label="Rossari product categories">
+        <button class="subcat-tab active" data-subcat="tissues">Tissues</button><button class="subcat-tab" data-subcat="rolls">Rolls</button>
+      </div>
+      <div class="subcat-panel active" data-panel="tissues"><div class="product-grid">
+        <article class="product-card"><div class="product-image-slot"><span>Product image</span></div><h4>Concord Facial Tissue 100 Pulls</h4><p>Compact facial tissue for convenient everyday use.</p><button class="order">Order Now</button></article>
+        <article class="product-card"><div class="product-image-slot"><span>Product image</span></div><h4>Green World HRT Paper Towels</h4><p>Absorbent paper towels for professional and everyday use.</p><button class="order">Order Now</button></article>
+        <article class="product-card"><div class="product-image-slot"><span>Product image</span></div><h4>Green World Table Top Napkins</h4><p>Multipurpose table napkins for hospitality and everyday use.</p><button class="order">Order Now</button></article>
+        <article class="product-card"><div class="product-image-slot"><span>Product image</span></div><h4>Concord Napkin 50 Pulls</h4><p>Soft napkin option for everyday serving and use.</p><button class="order">Order Now</button></article>
+        <article class="product-card"><div class="product-image-slot"><span>Product image</span></div><h4>Concord Napkin 100 Pulls</h4><p>Multipurpose napkin option for everyday use.</p><button class="order">Order Now</button></article>
+        <article class="product-card"><div class="product-image-slot"><span>Product image</span></div><h4>Concord Luncheon Napkins</h4><p>Selected luncheon napkin formats and sizes.</p><button class="order">Order Now</button></article>
+        <article class="product-card"><div class="product-image-slot"><span>Product image</span></div><h4>Concord Cocktail / Soft Napkins</h4><p>Soft napkin formats for tables and hospitality.</p><button class="order">Order Now</button></article>
+      </div></div>
+      <div class="subcat-panel" data-panel="rolls"><div class="product-grid">
+        <article class="product-card"><div class="product-image-slot"><span>Product image</span></div><h4>Green World Kitchen Utility Roll</h4><p>Robust utility roll for kitchen and canteen use.</p><button class="order">Order Now</button></article>
+        <article class="product-card"><div class="product-image-slot"><span>Product image</span></div><h4>Concord Toilet Roll</h4><p>Selected 2-ply toilet-roll sizes and pack formats.</p><button class="order">Order Now</button></article>
+      </div></div>
+    </div>
+
+    <div class="product-group" data-company="kressa">
+      <div class="group-title"><h3>KRESSA</h3><a href="https://kressa.co.in/" target="_blank" rel="noopener">Company website ↗</a></div>
+      <div class="subcategory-tabs" role="tablist" aria-label="Kressa product categories">
+        <button class="subcat-tab active" data-subcat="tissues">Tissues</button><button class="subcat-tab" data-subcat="rolls">Rolls</button>
+      </div>
+      <div class="subcat-panel active" data-panel="tissues"><div class="product-grid">
+        <article class="product-card"><div class="product-image-slot"><span>Product image</span></div><h4>2 Ply Face Tissue</h4><p>Facial tissue boxes in selected pull counts.</p><button class="order">Order Now</button></article>
+        <article class="product-card"><div class="product-image-slot"><span>Product image</span></div><h4>Paper Napkins — 1 Ply</h4><p>30 × 30 cm napkins in selected pull and pack sizes.</p><button class="order">Order Now</button></article>
+        <article class="product-card"><div class="product-image-slot"><span>Product image</span></div><h4>Tissue Napkins — 2 Ply</h4><p>30 × 30 cm and selected larger-size options.</p><button class="order">Order Now</button></article>
+        <article class="product-card"><div class="product-image-slot"><span>Product image</span></div><h4>Printed Party Napkins</h4><p>2-ply printed napkins in selected sizes and packs.</p><button class="order">Order Now</button></article>
+        <article class="product-card"><div class="product-image-slot"><span>Product image</span></div><h4>Premium Table Napkins</h4><p>Selected 40 × 40 cm, 2-ply table napkin options.</p><button class="order">Order Now</button></article>
+        <article class="product-card"><div class="product-image-slot"><span>Product image</span></div><h4>M-Fold Tissue Paper</h4><p>Multifold hand towels with selected pack formats.</p><button class="order">Order Now</button></article>
+      </div></div>
+      <div class="subcat-panel" data-panel="rolls"><div class="product-grid">
+        <article class="product-card"><div class="product-image-slot"><span>Product image</span></div><h4>Bathroom / Toilet Tissue Roll</h4><p>2-ply and selected 3-ply roll options.</p><button class="order">Order Now</button></article>
+        <article class="product-card"><div class="product-image-slot"><span>Product image</span></div><h4>Kitchen Tissue Roll</h4><p>2-ply kitchen roll with selected pull and pack sizes.</p><button class="order">Order Now</button></article>
+        <article class="product-card"><div class="product-image-slot"><span>Product image</span></div><h4>Kitchen Towel Roll 2-in-1</h4><p>2-ply kitchen towel format with multiple pack options.</p><button class="order">Order Now</button></article>
+        <article class="product-card"><div class="product-image-slot"><span>Product image</span></div><h4>Jumbo Multipurpose Kitchen Roll</h4><p>Large 2-ply kitchen roll format for higher-volume use.</p><button class="order">Order Now</button></article>
+      </div></div>
+    </div>
+
+    <div class="product-group" data-company="others">
+      <div class="group-title"><h3>OTHERS</h3><a href="#contact">Add products later →</a></div>
+      <div class="subcategory-tabs" role="tablist" aria-label="Other product categories">
+        <button class="subcat-tab active" data-subcat="tissues">Tissues</button><button class="subcat-tab" data-subcat="rolls">Rolls</button>
+      </div>
+      <div class="subcat-panel active" data-panel="tissues"><div class="product-grid"><article class="product-card"><div class="product-image-slot"><span>Product image</span></div><h4>Products coming soon</h4><p>Other tissue products can be added here when you provide the list and photos.</p><button class="order">Enquire</button></article></div></div>
+      <div class="subcat-panel" data-panel="rolls"><div class="product-grid"><article class="product-card"><div class="product-image-slot"><span>Product image</span></div><h4>Products coming soon</h4><p>Other roll products can be added here when you provide the list and photos.</p><button class="order">Enquire</button></article></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="section-head"><div class="eyebrow" style="color:#c6cbb9">About Us</div><h2>Ashok Trading</h2><p>A professional wholesale supplier in Mumbai, offering tissue and disposable products for business and everyday requirements.</p><div class="proprietor">Proprietor: <strong>Ashok. G. Melkera</strong></div></div>
+  <div class="about-grid"><div class="about-box"><h3>Our Range</h3><p>Focused on tissue and disposable products, with company-wise organisation to make product selection simple.</p></div><div class="about-box"><h3>Direct Enquiries</h3><p>Customers can use WhatsApp from any part of the website to ask about products and orders.</p></div></div>
+  <div class="dealership">
+    <div class="dealership-title">Dealership with:</div>
+    <div class="dealership-grid">
+      <article class="dealership-card"><img src="rossari-logo.png" alt="Rossari Professional logo"><h4>Rossari Professional</h4><p>Official Website of Rossari</p><a href="https://rossariprofessional.com/" target="_blank" rel="noopener">Visit official website ↗</a></article>
+      <article class="dealership-card"><img src="kressa-logo.png" alt="Kressa logo"><h4>Kressa</h4><p>Official Website of Kressa</p><a href="https://kressa.co.in/" target="_blank" rel="noopener">Visit official website ↗</a></article>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="why-ashok">
+  <div class="section-head"><div class="eyebrow">Why Ashok Trading</div><h2>Why Ashok Trading</h2><p>Simple, dependable tissue and disposable products for everyday, professional and business needs.</p></div>
+  <div class="why-grid">
+    <div class="why-card"><h3>Quality Products</h3><p>We focus on quality tissue and disposable products that are practical, dependable and comfortable to use.</p></div>
+    <div class="why-card"><h3>Super Soft Napkins</h3><p>Choose soft, comfortable napkin options for homes, offices, hospitality and everyday serving.</p></div>
+    <div class="why-card"><h3>All Sizes</h3><p>Products are available in a range of sizes and formats to suit different requirements.</p></div>
+    <div class="why-card"><h3>Options for Different Budgets</h3><p>We offer a range of products and pack formats to suit different needs and price points.</p></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="section-head"><div class="eyebrow">Contact</div><h2>Let's talk</h2><p>Use WhatsApp for quick product enquiries and orders.</p></div>
+  <div class="contact-grid">
+    <div class="contact-card"><h3>Contact Ashok Trading</h3>
+      <div class="contact-item"><div class="contact-label">Phone</div><div class="contact-value"><a href="tel:+919967258331">99672 58331</a></div></div>
+      <div class="contact-item"><div class="contact-label">Email</div><div class="contact-value"><a href="mailto:ashoktrading65@gmail.com">ashoktrading65@gmail.com</a></div></div>
+      <div class="contact-item"><div class="contact-label">WhatsApp</div><div class="contact-value"><a href="#" id="contactNumber">81692 04106</a></div></div>
+      <a class="btn primary map-btn" href="https://www.google.com/maps/search/?api=1&query=Shop+No.+2,+Opp.+Unique+BLDG,+Ramesh+Nagar,+Last+Bus+Stop,+near+Geetanjali+Bus+Stop,+Amboli,+Andheri+West,+Mumbai+400058" target="_blank" rel="noopener">Open location in Google Maps ↗</a>
+    </div>
+    <div class="contact-card"><h3>Business information</h3>
+      <div class="contact-item"><div class="contact-label">Products</div><div class="contact-value">Tissue & Disposable Products</div></div>
+      <div class="contact-item"><div class="contact-label">Brands</div><div class="contact-value">Rossari Professional · Kressa · Others</div></div>
+      <div class="contact-item"><div class="contact-label">Address</div><div class="contact-value address">Shop no. 2, Opp. Unique BLDG, Ramesh Nagar, Last Bus Stop, near Geetanjali Bus Stop, Amboli, Andheri (w), Mumbai - 400058</div></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<a class="whatsapp" href="#" id="floatingWhatsApp" aria-label="Contact Ashok Trading on WhatsApp" title="WhatsApp"><svg viewBox="0 0 32 32" width="31" height="31" aria-hidden="true"><path fill="currentColor" d="M19.1 17.2c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-1.7-.8-2.8-1.5-3.9-3.4-.3-.5.3-.5.8-1.6.1-.2 0-.4-.1-.6-.1-.2-.7-1.8-.9-2.5-.2-.7-.5-.6-.7-.6h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.1 1.3 3.3c.2.2 2.4 3.7 5.9 5.1 2.2.9 3.1.9 4.2.8.7-.1 2.1-.9 2.4-1.7.3-.8.3-1.5.2-1.7-.1-.2-.3-.3-.6-.5zM16 3.2A12.8 12.8 0 0 0 3.2 16c0 2.3.6 4.5 1.8 6.4L3 29l6.8-1.8A12.8 12.8 0 1 0 16 3.2zm0 23.3c-2 0-4-.5-5.7-1.6l-.4-.2-4 .9 1-3.9-.3-.4A10.8 10.8 0 1 1 16 26.5z"/></svg></a>
+<footer><strong>ASHOK TRADING</strong><p>Tissue & Disposable Products</p><p>© <span id="year"></span> Ashok Trading: All Rights Reserved.</p></footer>
+<script>
+const phone="918169204106";
+const draft="Hii Ashok sir!\nI wanted...";
+const wa="https://wa.me/"+phone+"?text="+encodeURIComponent(draft);
+document.getElementById("floatingWhatsApp").href=wa;
+document.getElementById("heroOrder").href=wa;
+document.getElementById("contactNumber").href=wa;
+document.getElementById("year").textContent=new Date().getFullYear();
+document.addEventListener("click",event=>{const interactive=event.target.closest("a,button");if(interactive)setTimeout(()=>interactive.blur(),0)});
+const drawer=document.getElementById("drawer"),overlay=document.getElementById("overlay");
+function openMenu(){drawer.classList.add("open");overlay.classList.add("show")};function closeMenu(){drawer.classList.remove("open");overlay.classList.remove("show")}
+document.getElementById("menuBtn").addEventListener("click",openMenu);document.getElementById("closeBtn").addEventListener("click",closeMenu);overlay.addEventListener("click",closeMenu);document.querySelectorAll(".drawer a").forEach(a=>a.addEventListener("click",closeMenu));
+function setOrderButtons(){document.querySelectorAll(".order").forEach(btn=>{btn.onclick=()=>{window.location.href=wa}})} setOrderButtons();
+const groups=[...document.querySelectorAll(".product-group")];
+function showCompany(filter){
+  document.querySelectorAll(".filter").forEach(b=>b.classList.toggle("active",b.dataset.filter===filter));
+  groups.forEach(group=>group.style.display=group.dataset.company===filter?"block":"none");
+  const activeGroup=groups.find(group=>group.dataset.company===filter);
+  if(activeGroup){
+    activeGroup.querySelectorAll(".subcat-tab").forEach((b,i)=>b.classList.toggle("active",i===0));
+    activeGroup.querySelectorAll(".subcat-panel").forEach((p,i)=>p.classList.toggle("active",i===0));
+  }
+}
+function setupSubcategories(){
+  groups.forEach(group=>{
+    group.querySelectorAll(".subcat-tab").forEach(tab=>tab.addEventListener("click",()=>{
+      const key=tab.dataset.subcat;
+      group.querySelectorAll(".subcat-tab").forEach(b=>b.classList.toggle("active",b===tab));
+      group.querySelectorAll(".subcat-panel").forEach(panel=>panel.classList.toggle("active",panel.dataset.panel===key));
+    }));
+  });
+}
+showCompany("rossari");
+document.querySelectorAll(".filter").forEach(btn=>btn.addEventListener("click",()=>showCompany(btn.dataset.filter)));
+setupSubcategories();
+</script>
+</body>
+</html>
